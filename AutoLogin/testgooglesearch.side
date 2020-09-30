@@ -1,0 +1,107 @@
+{
+  "id": "f068530f-ce58-4e1e-974b-268a758e2757",
+  "version": "2.0",
+  "name": "testgooglesearch",
+  "url": "https://www.google.com",
+  "tests": [{
+    "id": "20c9adb5-164e-49b3-b4a5-c1d2028cb26c",
+    "name": "FindAbhiOnGoogle",
+    "commands": [{
+      "id": "2f634dcc-9a2e-478c-b424-a5649b4e0da1",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2253c501-b92c-4945-a978-4e05bad188dc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "847x793",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "62933a2a-7501-4064-8839-3c14520397b1",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "21290ed4-ffa8-4c8d-bdff-11a485f0e964",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "abhishek porwal"
+    }, {
+      "id": "ec8fa3e5-ddf8-45bc-bc55-b95feda056ac",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "d6ffd492-5f1a-4920-81ca-c63651ff0457",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,53)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4a4106c0-f3f0-4c37-920c-930148c3103b",
+      "comment": "",
+      "command": "click",
+      "target": "id=dimg_7",
+      "targets": [
+        ["id=dimg_7", "id"],
+        ["css=#dimg_7", "css:finder"],
+        ["xpath=(//img[@alt='Image result for abhishek porwal'])[4]", "xpath:img"],
+        ["xpath=//img[@id='dimg_7']", "xpath:attributes"],
+        ["xpath=//a[@id='3hN4RkJ_CZTsvM:']/g-img/img", "xpath:idRelative"],
+        ["xpath=//div[4]/a/g-img/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba260eb1-f51d-4913-a6a6-bdb8d1a916bd",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.rg_bx:nth-child(5) > .rg_l",
+      "targets": [
+        ["css=.rg_bx:nth-child(5) > .rg_l", "css:finder"],
+        ["xpath=//div[@id='rg_s']/div[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/imgres?imgurl=https%3A%2F%2Findiacsr.in%2Fwp-content%2Fuploads%2F2016%2F04%2FAbhishek.jpg&imgrefurl=https%3A%2F%2Findiacsr.in%2Ftag%2Fabhishek-porwal%2F&docid=aLaarLsWxIeMiM&tbnid=V2xv4CPdKuowuM%3A&vet=10ahUKEwiLx_SU95TiAhWQdt8KHeXUCS4QMwg9KAMwAw..i&w=300&h=400&itg=1&bih=689&biw=847&q=abhishek%20porwal&ved=0ahUKEwiLx_SU95TiAhWQdt8KHeXUCS4QMwg9KAMwAw&iact=mrc&uact=8')]", "xpath:href"],
+        ["xpath=//div[2]/div/div[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "488c70c1-ecfe-4bc6-956d-2ea4b3a3923b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["20c9adb5-164e-49b3-b4a5-c1d2028cb26c"]
+  }],
+  "urls": ["https://www.google.com/"],
+  "plugins": []
+}

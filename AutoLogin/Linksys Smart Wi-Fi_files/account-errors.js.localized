@@ -1,0 +1,45 @@
+// use double-quotes for strings (use single-quotes for html elements inside the string)
+
+'use strict';
+window.RAINIER.createAccount = window.RAINIER.createAccount || {};
+window.RAINIER.createAccount.strings = {
+    accountExistsHeading: "Account already exists",
+    accountExistsMessage: "A Linksys Smart Wi-Fi account for {username} already exists.",
+    mustAcceptTerms: "License Terms must be accepted"
+};
+window.RAINIER.login = window.RAINIER.login || {};
+window.RAINIER.login.strings = {
+    invalidInputGuestLogin: "Network connection is invalid. Please refresh the page and try again.",
+    invalidGuestPassword: "Invalid guest password. Please try again.",
+    invalidRouterPassword: "Invalid router password. Please try again.",
+    unexpectedError: "There was an unexpected error logging in. Please try again.",
+    invalidCloudLogin: "Invalid email address or password. Please try again.",
+    cloudUnavailable: "There was an unexpected error with the Linksys Smart Wi-Fi services. Please try again later.",
+    unexpectedCloudError: "There was an unexpected error communicating with the Linksys Smart Wi-Fi services. Try again later when you have an Internet connection.",
+    accountNotFound: "A Linksys Smart Wi-Fi account for {username} does not exist.",
+    accountDisabled: "The Linksys Smart Wi-Fi Account for {username} has been disabled.",
+    accountPending: "Your account is currently pending, please verify it first then reset the password.",
+    changePasswordTokenInvalid: "The password reset link is invalid or has expired. Click the <em>Forgot Your Password</em> link and try again.",
+    changePasswordTokenInvalidTitle: "Password Reset Error",
+    wifiBreakContent: "Guest Access could not connect to the router. Try the following:" + "<br /><br />" + 
+        "Make sure you are connected to this wireless network:" + "<br /><br />" +
+        "Make sure all router cables are connected and lights are blinking." + "<br /><br />" + 
+        "Make sure your computer is within range of the router. If your computer is too far away from or too close to the router, the wireless signal may not be found." + "<br /><br />" +
+        "Disable and then enable the wireless adapter on your computer or device." + "<br /><br /><br />" + 
+        "To try again, click Refresh.",
+    remoteAssistance: {
+        errorNetworkUnreachable: "Cannot connect to customer's router.",
+        errorUnauthorized: "You are not authorized to conduct remote assistance.",
+        errorUnknownTarget: "No router with that serial number. Have customer verify number.",
+        invalidPin: "Incorrect or expired PIN. Ask customer to confirm the PIN. If it still does not work, ask customer to close the active session pop-up window and press the Remote Assistance link.",
+        expiredSession: "Remote session has expired. A new session must be initiated by the customer."
+    }
+};
+window.RAINIER.generic = window.RAINIER.generic || {};
+window.RAINIER.generic.strings = {
+    genericErrorHeaderTitle: "We've encountered an error",
+    genericErrorHeaderSubtitle: "Our customer support team can help",
+    genericErrorContent: "Please visit our website for troubleshooting tips or to chat with a Customer Support representative. You may have to use a different computer or mobile device that has Internet access, or connect your computer directly to your modem.",
+    genericErrorCodeTemplate: "Error code:&nbsp;{code}",
+    genericErrorMessageTemplate: "Error message:&nbsp;{message}"
+};

@@ -1,0 +1,83 @@
+// use double-quotes for strings (use single-quotes for html elements inside the string)
+
+'use strict';
+if (!window.RAINIER) {
+    window.RAINIER = {};
+}
+
+RAINIER.setup = RAINIER.setup || {};
+
+RAINIER.setup.ui = {
+    "guest": "guest",
+    "guestpassword": {},
+    "lanBreakHeader": "Setup could not find your router",
+    "lanBreakContentLanding": "Setup could not connect to your router. Try the following:" + "<br /><br />" +
+        "Make sure you are connected to this wireless network:" + "<br />" +
+        "Wireless network name: REPLACE_SSID" + "<br />" +
+        "Wireless network password: REPLACE_PASSWORD" + "<br /><br />" +
+        "Make sure all router cables are connected and lights are blinking." + "<br /><br />" +
+        "Make sure your computer is within range of your router. If your computer is too far away from or too close to the router, the wireless signal may not be found." + "<br /><br />" +
+        "Disable and then enable the wireless adapter on your computer or device.",
+    "retry": "Retry",
+    "inputRequired": "Input is required",
+    "inputCannotBeginOrEndWithSpace": "Cannot begin or end with a space",
+    "inputInvalid": "Invalid input",
+    "invalidEmail": "Invalid email address",
+    "emailMismatch": "Email does not match",
+    "accountPending": "Your login has not been validated. Please check your email for the validation message.",
+    "pppoeSettingsInvalid": "The account name or password is incorrect.",
+    "confirmExit": "If you leave this process before router setup is complete, a factory reset (pressing the reset button for 15 seconds) may be necessary to continue.",
+    "confirmExitUpdate": "Your firmware update hasn't finished. If you leave this page before the update is finished, a factory reset (pressing the reset button for 15 seconds) may be necessary to continue.",
+    "pleaseWait": "Please wait...",
+    "almostThere": "Almost there...",
+    "mustChangeSsid": "You must also change the Wireless network name",
+    "invalidIpAddress": "Invalid IP address",
+    "invalidSubnetMask": "Invalid subnet mask",
+    "equalGatewayIpAddress": "The Internet address and Default gateway address cannot be the same",
+    "invalidDns": "Invalid DNS Server",
+    "selectRegion": "Please select your region",
+    "selectCountry": "Please select your country",
+    "selectIsp": "Please select your ISP",
+    "pmRegions": {},
+    "tooManyCharacters": "Too many characters"
+};
+
+RAINIER.setup.ui.guestpassword.strings = [
+    "almond",
+    "avocado",
+    "basil",
+    "banana",
+    "blueberry",
+    "cabbage",
+    "carrot",
+    "cherry",
+    "cranberry",
+    "cucumber",
+    "garlic",
+    "grape",
+    "kiwi",
+    "lettuce",
+    "mango",
+    "melon",
+    "mushroom",
+    "mustard",
+    "nectarine",
+    "olive",
+    "onion",
+    "pepper",
+    "pineapple",
+    "potato",
+    "pumpkin",
+    "radish",
+    "raspberry",
+    "strawberry",
+    "tomato",
+    "walnut"
+];
+
+RAINIER.setup.ui.pmRegions = {
+    "APAC" : "Asia Pacific",
+    "EMEA" : "Europe / Middle East / Africa",
+    "LATAM" : "Latin America",
+    "North America" : "North America"
+};
