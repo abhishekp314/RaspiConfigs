@@ -1,0 +1,25 @@
+// Tips to find the wifi credentials
+/etc/wpa_supplicant/wpa_supplicant.conf
+
+// Get <ROUTER_IP_ADDRESS> of the Router 
+ip r | grep default
+
+// Get <DNS_Server> from resolve.conf
+// Find nameserver <ip_address> 
+sudo nano /etc/resolv.conf
+
+
+// Open dhcpcd.conf
+sudo nano /etc/dhcpcd.conf
+
+// Write the following
+interface <eth0|wlan0>
+static ip_address=<STATIC_IP_ADDRESS>/24
+static routers=<ROUTER_IP_ADDRESS>
+static domain_name_servers=<DNS_Server|8.8.8.8|1.1.1.1>
+
+// Restart
+sudo reboot
+
+// Verify the IP
+hostname -I
